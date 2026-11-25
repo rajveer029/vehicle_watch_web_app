@@ -1,0 +1,61 @@
+{
+  "video_id": "VID-001",
+  "source_file": "cctv1.mp4",
+  "inference_file": "cctv1inference.mp4",
+  "processing_status": "completed",
+  "model_version": "vehicle-model-demo-v1",
+  "video_metadata": {
+    "duration_seconds": 90,
+    "fps": 30,
+    "resolution": "640x360",
+    "camera_id": "CAM-DEMO-001",
+    "recorded_at": "2026-11-20T14:30:00+05:30",
+    "location": {"label": "Demo Location A"}
+  },
+  "detections": [
+    {
+      "detection_id": "DET-001",
+      "track_id": "TRACK-001",
+      "timestamp_seconds": 12.45,
+      "frame_number": 373,
+      "vehicle": {"type": "SUV", "manufacturer": "Mahindra", "model": "XUV700", "colour": "black", "attributes_confidence": 0.93},
+      "registration": {"text": "JK02ZZ9988", "ocr_confidence": 0.94},
+      "candidate_matches": [{"stolen_vehicle_profile_id": "SVP-0001", "visual_similarity": 0.91, "reason": ["make_match", "model_match", "colour_match"]}],
+      "registration_comparison": {"lookup_status": "completed", "registered_vehicle": {"manufacturer": "Mahindra", "model": "XUV700", "colour": "white"}, "mismatch_detected": true},
+      "suspicious_match": true
+    },
+    {
+      "detection_id": "DET-002",
+      "track_id": "TRACK-002",
+      "timestamp_seconds": 18.21,
+      "frame_number": 546,
+      "vehicle": {"type": "sedan", "manufacturer": "Hyundai", "model": "Verna", "colour": "white", "attributes_confidence": 0.88},
+      "registration": {"text": "JK01CD5678", "ocr_confidence": 0.89},
+      "candidate_matches": [],
+      "suspicious_match": false
+    },
+    {
+      "detection_id": "DET-003",
+      "track_id": "TRACK-003",
+      "timestamp_seconds": 48.21,
+      "frame_number": 1446,
+      "vehicle": {"type": "SUV", "manufacturer": "Mahindra", "model": "XUV700", "colour": "black"},
+      "registration": {"text": "JK02AB1234", "ocr_confidence": 0.98},
+      "candidate_matches": [],
+      "registration_comparison": {"lookup_status": "completed", "registered_vehicle": {"manufacturer": "Mahindra", "model": "XUV700", "colour": "black"}, "mismatch_detected": false},
+      "suspicious_match": false
+    },
+    {
+      "detection_id": "DET-004",
+      "track_id": "TRACK-004",
+      "timestamp_seconds": 73.5,
+      "frame_number": 2205,
+      "vehicle": {"type": "SUV", "manufacturer": "Mahindra", "model": "XUV700", "colour": "black"},
+      "registration": {"text": "JK02EF4321", "ocr_confidence": 0.95},
+      "candidate_matches": [],
+      "registration_comparison": {"lookup_status": "completed", "registered_vehicle": {"manufacturer": "Mahindra", "model": "XUV700", "colour": "black"}, "mismatch_detected": false},
+      "suspicious_match": false
+    }
+  ],
+  "summary": {"total_vehicle_tracks": 4, "total_detections": 4, "candidate_detections": 1, "suspicious_matches": 1}
+}
